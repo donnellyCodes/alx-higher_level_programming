@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # sys is used to access list of command line arguments passed to it
 import sys
-if __name__ == '__main__':
+if __name__ == "__main__":
     # to determine number of arguments
     argc = len(sys.argv) - 1
     if argc == 0:
