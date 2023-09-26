@@ -1,4 +1,5 @@
 #!/usr/bin/python
-'''Defining a square'''
+"""Defining a class square"""
 class Square:
-    pass #empty block
+    """Defining properties of a square"""
+    pass
