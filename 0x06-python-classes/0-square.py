@@ -1,4 +1,4 @@
 #!/usr/bin/python
 '''Defining a square'''
 class Square:
-    '''Block of code'''
+    '''python3 -c 'print(__import__("my_module").MyClass.__doc__)''''
