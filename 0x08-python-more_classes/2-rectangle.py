@@ -1,18 +1,19 @@
 #!/usr/bin/python3
 
 
-"""Defining a class rectangle"""
+""""defining the rectangle class"""
 class Rectangle:
-    """initializing the objects width and height"""
+
+    """initializing the objects"""
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
 
-    """to retrieve the private instance"""
+    """retrieving the width property"""
     def width(self):
         return self.__width
 
-    """to set the private instance width"""
+    """setting the width"""
     def width(self, value):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -21,11 +22,11 @@ class Rectangle:
         else:
             self.__width = value
 
-    """to retrieve private instance height"""
+    """retrieving height property"""
     def height(self):
         return self.__height
 
-    """to set the height instance"""
+    """setting the height"""
     def height(self, value):
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
@@ -33,3 +34,12 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
+
+    """defining a public instance"""
+    def area(self):
+        return self.width * self.height
+    def perimeter(self):
+        if self.width == 0 or self.height == 0:
+            return 0
+        else:
+            return 2 * (self.width + self.height)
