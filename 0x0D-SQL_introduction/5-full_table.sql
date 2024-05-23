@@ -1,2 +1,2 @@
 -- printing full description of first_table in datbase
-SHOW CREATE TABLE firat_table;
+SHOW CREATE TABLE first_table;
