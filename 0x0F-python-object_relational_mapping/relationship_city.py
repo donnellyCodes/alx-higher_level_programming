@@ -6,6 +6,7 @@ Defines a class city
 from relationship_state import Base, State
 from sqlalchemy import Column, Integer, String, ForeignKey
 
+
 class City(Base):
     """City module"""
     __tablename__ = "cities"
