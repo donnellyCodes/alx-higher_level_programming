@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+"""
+Class rectangle
+"""
+
 
 class Rectangle:
     """Defines a rectangle by its width and height."""
-
-
     number_of_instances = 0
     print_symbol = "#"
 
@@ -45,24 +47,25 @@ class Rectangle:
 
     def area(self):
         """Returns the area of the rectangle."""
-        return self.width * self.height
+        return self.__width * self.__height
 
     def perimeter(self):
         """Returns the perimeter of the rectangle."""
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
         else:
-            return 2 * (self.width + self.height)
+            return 2 * (self.__width + self.__height)
 
     def __str__(self):
         """Returns a string representation of the rectangle."""
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ""
         else:
-            return "\n".join([Rectangle.print_symbol * self.width] * self.height)
+            return "\n".join(
+                    [Rectangle.print_symbol * self.__width] * self.__height)
 
     def __repr__(self):
-        """Returns a string representation of the rectangle that can be used to recreate it."""
+        """Returns a string representation of rectangle that can recreate it"""
         return f"Rectangle({self.width}, {self.height})"
 
     def __del__(self):
@@ -81,4 +84,3 @@ class Rectangle:
             return rect_1
         else:
             return rect_2
-
