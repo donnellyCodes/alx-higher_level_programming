@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+"""
+class rectangle
 
- """defining the class rectangle"""
+"""
+
 
 class Rectangle:
-    """an empty block of code"""
+    """class type rectangle"""
     pass
