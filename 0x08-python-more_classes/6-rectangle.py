@@ -46,7 +46,7 @@ class Rectangle:
             return 0
         else:
             return 2 * (self.width + self.height)
-    
+
     def __str__(self):
         """returns string representation of the rectangle"""
 
@@ -54,8 +54,9 @@ class Rectangle:
             return ""
         else:
             return "\n".join(["#" * self.width] * self.height)
+
     def __repr__(self):
-        """"returns a string representation of the rectangle that can be used to recreate it"""
+        """"returns a string representation of rectangle to recreate it"""
 
         return f"Rectangle({self.width}, {self.height})"
 
