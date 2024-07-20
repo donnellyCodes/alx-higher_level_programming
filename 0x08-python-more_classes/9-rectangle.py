@@ -43,25 +43,26 @@ class Rectangle:
 
     def area(self):
         """Returns the area of the rectangle."""
-        return self.width * self.height
+        return self.__width * self.__height
 
     def perimeter(self):
         """Returns the perimeter of the rectangle."""
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
         else:
-            return 2 * (self.width + self.height)
+            return 2 * (self.__width + self.__height)
 
     def __str__(self):
         """Returns a string representation of the rectangle."""
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ""
         else:
-            return "\n".join([Rectangle.print_symbol * self.width] * self.height)
+            return "\n".join(
+                    [Rectangle.print_symbol * self.__width] * self.__height)
 
     def __repr__(self):
-        """Returns a string representation of the rectangle that can be used to recreate it."""
-        return f"Rectangle({self.width}, {self.height})"
+        """Returns a string representation of rectangle that can recreate it"""
+        return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
         """Prints a message when an instance of Rectangle is deleted."""
@@ -80,6 +81,6 @@ class Rectangle:
         else:
             return rect_2
 
-    @class method
-    def square(cls, size = 0):
+    @classmethod
+    def square(cls, size=0):
         return cls(size, size)
