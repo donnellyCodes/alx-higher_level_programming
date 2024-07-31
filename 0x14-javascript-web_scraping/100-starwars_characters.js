@@ -15,10 +15,10 @@ request.get(url, (error, response, body) => {
       request.get(character, (error, response, body) => {
         if (error) {
           console.log(error);
-	} else {
+        } else {
           const names = JSON.parse(body);
           console.log(names.name);
-	}
+        }
       });
     }
   }
