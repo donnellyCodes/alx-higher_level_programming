@@ -14,7 +14,7 @@ request.get(process.argv[2], { json: true }, (error, response, body) => {
       if (!tasksCompleted[todo.userId]) {
         tasksCompleted[todo.userId] = 1;
       } else {
-	tasksCompleted[todo.userId] += 1;
+        tasksCompleted[todo.userId] += 1;
       }
     }
   });

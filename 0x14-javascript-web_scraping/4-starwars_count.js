@@ -12,7 +12,7 @@ request.get(process.argv[2], (error, response, body) => {
       film.characters.forEach((character) => {
         if (character.includes(18)) {
           num += 1;
-	}
+        }
       });
     });
     console.log(num);
